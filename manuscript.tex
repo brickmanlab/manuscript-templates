@@ -1,4 +1,13 @@
- \leadauthor{Scientist}
+%% select between bioRxiv style or submission style by commenting either line
+% \documentclass[twocolumn]{theme/bioRxiv}
+\documentclass[submit]{theme/bioRxiv}
+\renewcommand\familydefault{\sfdefault}
+\usepackage{lipsum}
+\usepackage{parskip}
+
+\begin{document}
+
+\leadauthor{Scientist}
 
 \title{Description of an amazing research project}
 \shorttitle{Running title here}
@@ -49,7 +58,7 @@ As you can see (Figure \ref{fig:cells}).
 % full size figure is figure*
 \begin{figure*}
 \centering
-\includegraphics[width=0.75\linewidth]{Figures/temp.png}
+\includegraphics[width=0.75\linewidth]{figures/temp.png}
 \caption{\textbf{These are cells.}\\
 (\textbf{A}) This is a regular figure with a legend as a caption underneath. Inset: 3X zoom. Scale bar, \SI{10}{\micro\meter}.}
 \label{fig:cells}
@@ -57,7 +66,6 @@ As you can see (Figure \ref{fig:cells}).
 
 It is possible to add a one-column Figure like this (Figure \ref{fig:nucleus}).
 To add Supplementary Figures you can do either of these things and have them at the end of the end of the paper (Supplementary Figure \ref{suppfig:endosome}).
-Or like this (Supplementary Figure \ref{videosupp:lysosome}).
 
 \lipsum[10]
 
@@ -68,7 +76,7 @@ Or like this (Supplementary Figure \ref{videosupp:lysosome}).
 % one-column size figure is figure
 \begin{figure}
 \centering
-\includegraphics[width=0.75\linewidth]{Figures/temp.png}
+\includegraphics[width=0.75\linewidth]{figures/temp.png}
 \caption{\textbf{This is a nucleus.}\\
 (\textbf{A}) This is a one-column figure with a legend as a caption underneath.}
 \label{fig:nucleus}
@@ -109,5 +117,8 @@ Otherwise use siunitx for everything else. \SI{37}{\degreeCelsius} and what-not.
 \lipsum[80]
 
 \section*{Bibliography}
-\bibliographystyle{bxv_abbrvnat}
-\bibliography{refs.bib}
+\bibliography{bibliography.bib}
+
+\include{supplementary.tex}
+
+\end{document}

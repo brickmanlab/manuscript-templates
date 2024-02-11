@@ -309,7 +309,7 @@
 \RequirePackage{chapterbib} % outside of Overleaf, comment this line
 \RequirePackage[sectionbib,authoryear,round]{natbib}
 \setlength{\bibsep}{0.0pt}
-\bibliographystyle{bxv_abbrvnat}
+\bibliographystyle{theme/bxv_abbrvnat}
 \renewcommand{\bibsection}{} % Remove header
 \if@submit
   \renewcommand\bibfont{\normalfont\sffamily\fontsize{9}{10}\selectfont} % set font to be sans serif
@@ -479,15 +479,15 @@
   }}
 \else
   \def\aBioRXiv{{\footnotesize
-      \footerfont \@leadauthor\ifnum \value{authors} > 2\hspace{2pt}\textit{et al.}\fi\hspace{7pt}|\hspace{7pt}\includegraphics[width=1cm, trim=0 1.5cm 0 0]{bioRxiv_logo} \hspace{7pt}|\hspace{7pt}\today\hspace{7pt}|\hspace{7pt}\thepage\textendash\pageref{LastPage}
+      \footerfont \@leadauthor\ifnum \value{authors} > 2\hspace{2pt}\textit{et al.}\fi\hspace{7pt}|\hspace{7pt}\includegraphics[width=1cm, trim=0 1.5cm 0 0]{theme/bioRxiv_logo} \hspace{7pt}|\hspace{7pt}\today\hspace{7pt}|\hspace{7pt}\thepage\textendash\pageref{LastPage}
     }}
 
   \def\bBioRXiv{{\footnotesize
-      \footerfont \thepage\hspace{7pt}|\hspace{7pt}\includegraphics[width=1cm, trim=0 1.5cm 0 0]{bioRxiv_logo}
+      \footerfont \thepage\hspace{7pt}|\hspace{7pt}\includegraphics[width=1cm, trim=0 1.5cm 0 0]{theme/bioRxiv_logo}
     }}
 
   \def\cBioRXiv{{\footnotesize
-      \footerfont \includegraphics[width=1cm, trim=0 1.5cm 0 0]{bioRxiv_logo}\hspace{7pt}|\hspace{7pt}\thepage
+      \footerfont \includegraphics[width=1cm, trim=0 1.5cm 0 0]{theme/bioRxiv_logo}\hspace{7pt}|\hspace{7pt}\thepage
     }}
 \fi
 
