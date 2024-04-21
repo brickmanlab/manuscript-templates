@@ -366,6 +366,10 @@
   \Affilfont\bfseries ACKNOWLEDGEMENTS\par\mdseries}
   \def\endacknowledgements{\vspace{1em}\par\normalsize}
 
+  \def\funding{
+  \Affilfont\bfseries FUNDING\par\mdseries}
+  \def\endacknowledgements{\vspace{1em}\par\normalsize}
+
   \def\contributions{
   \Affilfont\bfseries AUTHOR CONTRIBUTIONS\par\mdseries}
   \def\endcontributions{\vspace{1em}\par\normalsize}
@@ -398,6 +402,10 @@
 
   \def\acknowledgements{\vspace{1em}
   \Affilfont\bfseries ACKNOWLEDGEMENTS\par\mdseries}
+  \def\endacknowledgements{\vspace{0.3em}\par\normalsize}
+
+  \def\funding{\vspace{1em}
+  \Affilfont\bfseries FUNDING\par\mdseries}
   \def\endacknowledgements{\vspace{0.3em}\par\normalsize}
 
   \def\contributions{\vspace{.3em}
@@ -479,15 +487,15 @@
   }}
 \else
   \def\aBioRXiv{{\footnotesize
-      \footerfont \@leadauthor\ifnum \value{authors} > 2\hspace{2pt}\textit{et al.}\fi\hspace{7pt}|\hspace{7pt}\includegraphics[width=1cm, trim=0 1.5cm 0 0]{theme/bioRxiv_logo} \hspace{7pt}|\hspace{7pt}\today\hspace{7pt}|\hspace{7pt}\thepage\textendash\pageref{LastPage}
+      \footerfont \@leadauthor\ifnum \value{authors} > 2\hspace{2pt}\textit{et al.}\fi\hspace{7pt}|\hspace{7pt}\includegraphics[width=1cm, trim=0 1.5cm 0 0]{bioRxiv_logo} \hspace{7pt}|\hspace{7pt}\today\hspace{7pt}|\hspace{7pt}\thepage\textendash\pageref{LastPage}
     }}
 
   \def\bBioRXiv{{\footnotesize
-      \footerfont \thepage\hspace{7pt}|\hspace{7pt}\includegraphics[width=1cm, trim=0 1.5cm 0 0]{theme/bioRxiv_logo}
+      \footerfont \thepage\hspace{7pt}|\hspace{7pt}\includegraphics[width=1cm, trim=0 1.5cm 0 0]{bioRxiv_logo}
     }}
 
   \def\cBioRXiv{{\footnotesize
-      \footerfont \includegraphics[width=1cm, trim=0 1.5cm 0 0]{theme/bioRxiv_logo}\hspace{7pt}|\hspace{7pt}\thepage
+      \footerfont \includegraphics[width=1cm, trim=0 1.5cm 0 0]{bioRxiv_logo}\hspace{7pt}|\hspace{7pt}\thepage
     }}
 \fi
 
